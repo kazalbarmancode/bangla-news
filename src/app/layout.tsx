@@ -21,7 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-theme="light"
       className={`${notoSerifBangali} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white">
+      <body className="min-h-full  flex flex-col bg-white ">
         <Header></Header>
         <Marquee></Marquee>
 

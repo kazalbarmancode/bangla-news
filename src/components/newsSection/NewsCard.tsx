@@ -11,7 +11,7 @@ interface NewsType {
 
 const NewsCard = ({ news }: { news: NewsType }) => {
   return (
-    <Link href={`/news/newsId`}>
+    <Link href={`/news/${news.id}`}>
     <div className="card bg-base-100 border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer">
       
       <figure className="relative w-full h-48 sm:h-52 md:h-56 overflow-hidden">

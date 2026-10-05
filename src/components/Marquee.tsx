@@ -21,13 +21,14 @@ const Marquee = async () => {
   const headLines = data.data;
 
   return (
-    <div className="bg-red-700 mt-3 max-w-7xl mx-auto">
-      <div className="flex items-center mx-10 px-4  overflow-hidden">
+   
+     <div className="w-full  mt-2.5">
+      <div className="max-w-7xl mx-auto bg-red-700 flex items-center px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="bg-red-900 py-2 px-5 font-bold text-white shrink-0 z-10">
           সর্বশেষ
         </div>
 
-        <div className="flex-1 overflow-hidden min-w-0">
+        <div className="flex-1 overflow-hidden min-w-0 py-2">
           <MarqueeText direction="right" duration={8} className="text-white">
             {headLines.map((headLine: MarqueeDataType) => (
               <span key={headLine.id} className="inline-flex items-center">
