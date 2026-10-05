@@ -35,7 +35,7 @@ const NewsSection = async () => {
     <div className="max-w-7xl mx-auto w-full px-4 mt-5">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div className="col-span-1 md:col-span-2 space-y-8">
+        <div className="col-span-1 md:col-span-2 space-y-8 ">
           <MainNews news={mainSectionArticles} />
 
           <div className="space-y-6">
@@ -55,7 +55,7 @@ const NewsSection = async () => {
           </div>
         </div>
 
-        <div className="col-span-1 p-4 rounded-md h-fit">
+        <div className="col-span-1 p-4 rounded-md h-fit ">
           <MostRead></MostRead>
         </div>
 

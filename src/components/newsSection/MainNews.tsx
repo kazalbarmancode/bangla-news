@@ -19,7 +19,7 @@ const MainNews = ({ news }:{news:News[]}) => {
   const otherNews = news.slice(1);
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 mt-1">
+    <div className="flex flex-col md:flex-row gap-6 mt-1 ">
       <div className="card bg-base-100 shadow-sm md:w-2/3 border border-gray-100">
         <figure className="relative w-full h-30 md:h-50">
           <Image

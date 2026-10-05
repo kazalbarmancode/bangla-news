@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLinksPathName from "./usePathName/NavLinksPathName";
 
 interface Navs {
   slug: string;
@@ -12,15 +12,16 @@ const Navlinks = async () => {
   const data = await res.json();
   const navs: Navs[] = data.data;
   const filterNavs = navs.filter((filterNav) => filterNav.scrapable);
+  const navItems = [
+    { id: "home", label: "হোম", href: "/" },
+    ...filterNavs.map((nav) => ({
+      id: nav.slug,
+      label: nav.title,
+      href: `/category/${nav.slug}`,
+    })),
+  ];
   return (
-    <div className="flex gap-5 justify-center mt-5 max-w-7xl mx-auto w-full">
-      <Link href={"/"}>হোম</Link>
-      {filterNavs.map((nav, index) => (
-        <Link href={nav.slug} key={index}>
-          {nav.title}
-        </Link>
-      ))}
-    </div>
+   <NavLinksPathName navItems={navItems}></NavLinksPathName>
   );
 };
 

@@ -21,8 +21,8 @@ const Marquee = async () => {
   const headLines = data.data;
 
   return (
-    <div className="bg-red-700 mt-3 w-full">
-      <div className="flex items-center max-w-7xl mx-auto px-4  overflow-hidden">
+    <div className="bg-red-700 mt-3 max-w-7xl mx-auto">
+      <div className="flex items-center mx-10 px-4  overflow-hidden">
         <div className="bg-red-900 py-2 px-5 font-bold text-white shrink-0 z-10">
           সর্বশেষ
         </div>
